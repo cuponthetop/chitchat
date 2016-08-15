@@ -15,5 +15,5 @@ sudo apt-get install -y mongodb-org
 # install npm modules
 sudo npm install -g gulp
 # install letsencrypt
-sudo apt-get -y install git bc
+sudo apt-get -y install bc
 sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
