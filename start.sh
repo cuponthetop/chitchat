@@ -2,10 +2,10 @@ mkdir log
 mkdir log/mongo
 
 #start mongodb
-sudo service mongod start --logpath ./log/mongo
+sudo service mongod start
 
 # start nginx
-sudo service nginx start -c ./nginx/nginx.conf
+sudo nginx -c ~/chitchat/nginx/nginx.conf
 
 # clone server repositories
 git clone https://github.com/cuponthetop/chitchat_front.git
