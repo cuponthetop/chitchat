@@ -2,7 +2,8 @@
 sudo service mongod restart
 
 # restart nginx
-sudo service nginx restart -c ./nginx/nginx.conf
+sudo service nginx stop
+sudo nginx -c ~/chitchat/nginx/nginx.conf
 
 # restart chat server
 cd chitchat_chat

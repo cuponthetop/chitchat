@@ -1,5 +1,5 @@
 mkdir log
-mkdir log/mongo
+mkdir log/nginx
 
 #start mongodb
 sudo service mongod start
