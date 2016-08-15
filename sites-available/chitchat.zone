@@ -1,5 +1,7 @@
 server {
     listen 443 ssl;
+    # for now
+    listen 80;
 
     server_name chitchat.zone www.chitchat.zone;
 
@@ -62,8 +64,8 @@ server {
 }
 
 # redirect http request to https
-server {
-    listen 80;
-    server_name chitchat.zone www.chitchat.zone;
-    return 301 https://$host$request_uri;
-}
+# server {
+#     listen 80;
+#     server_name chitchat.zone www.chitchat.zone;
+#     return 301 https://$host$request_uri;
+# }
