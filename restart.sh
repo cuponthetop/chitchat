@@ -3,7 +3,13 @@ sudo service mongod restart
 
 # restart nginx
 sudo service nginx stop
-sudo nginx -c ~/chitchat/nginx/nginx.conf
+
+# copy nginx config 
+sudo rm /etc/nginx/sites-available/chitchat.zone
+sudo cp ./sites-available/chitchat.zone /etc/nginx/sites-available/
+
+# start nginx
+sudo service nginx restart
 
 # kill all chitchat processes
 kill $(ps aux | grep 'chitchat' | awk '{print $2}')
