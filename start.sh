@@ -1,5 +1,6 @@
 mkdir log
 mkdir log/front log/back log/chat
+touch log/front/log log/back/log log/chat/log
 
 #start mongodb
 sudo service mongod restart
