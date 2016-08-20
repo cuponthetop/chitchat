@@ -18,7 +18,7 @@ kill $(ps aux | grep 'node' | awk '{print $2}')
 cd chitchat_chat
 git pull origin master
 rm -rf ./node_modules
-npm install
+#npm install
 node lib/server.js >> ../log/chat/log &
 
 cd ..
@@ -26,7 +26,7 @@ cd ..
 cd chitchat_back
 git pull origin master
 rm -rf ./node_modules
-npm install
+#npm install
 gulp transpile
 node build/lib/server.js >> ../log/back/log &
 
@@ -36,7 +36,7 @@ cd ..
 cd chitchat_front
 git pull origin master
 rm -rf ./node_modules
-npm install
+#npm install
 node app.js >> ../log/front/log &
 
 cd ..
