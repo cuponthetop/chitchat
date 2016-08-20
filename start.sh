@@ -21,20 +21,17 @@ git clone https://github.com/cuponthetop/chitchat_chat.git
 # start chat server
 cd chitchat_chat
 npm install
-touch log/chat/log
-node chitchat_chat/lib/server.js >> log/chat/log &
+node chitchat_chat/lib/server.js >> ../log/chat/log &
 cd ..
 # start back server
 cd chitchat_back
 npm install
-touch log/back/log
 gulp transpile
-node chitchat_back/build/lib/server.js >> log/back/log &
+node chitchat_back/build/lib/server.js >> ../log/back/log &
 cd ..
 
 # start front server
 cd chitchat_front
 npm install
-touch log/front/log
-node chitchat_front/app.js >> log/front/log &
+node chitchat_front/app.js >> ../log/front/log &
 cd ..
