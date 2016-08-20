@@ -12,7 +12,7 @@ sudo cp ./sites-available/chitchat.zone /etc/nginx/sites-available/
 sudo service nginx restart
 
 # kill all chitchat processes
-kill $(ps aux | grep 'chitchat' | awk '{print $2}')
+kill $(ps aux | grep 'node' | awk '{print $2}')
 
 # restart chat server
 cd chitchat_chat
